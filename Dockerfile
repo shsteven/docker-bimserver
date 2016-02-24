@@ -1,5 +1,5 @@
 ############################################################
-# Dockerfile to deploy BIMserver 1.4.0 on Tomcat 8.0.30
+# Dockerfile to deploy BIMserver 1.4.0 on Tomcat 8.0.32
 # Based on Ubuntu 14.04 x64
 ############################################################
 
@@ -25,10 +25,10 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 RUN mkdir /opt/tomcat
 RUN groupadd tomcat
 RUN useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
-RUN wget http://mirror.vorboss.net/apache/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz \
-	-O /tmp/apache-tomcat-8.0.30.tar.gz
-RUN tar xvf /tmp/apache-tomcat-8.0.30.tar.gz -C /opt/tomcat --strip-components=1
-RUN rm -f /tmp/apache-tomcat-8.0.30.tar.gz
+RUN wget http://mirror.vorboss.net/apache/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.gz \
+	-O /tmp/apache-tomcat-8.0.32.tar.gz
+RUN tar xvf /tmp/apache-tomcat-8.0.32.tar.gz -C /opt/tomcat --strip-components=1
+RUN rm -f /tmp/apache-tomcat-8.0.32.tar.gz
 
 # Set permissions for group and user to install BIMserver and edit conf
 
