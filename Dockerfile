@@ -41,7 +41,7 @@ RUN chmod a+rwx /opt && chmod a+rwx /opt/tomcat/webapps
 
 # Download BIMserver into /webapps for autodeploy
 
-RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/parent-1.5.43/bimserverwar-1.5.43.war \
+RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/parent-1.5.45/bimserverwar-1.5.45.war \
 	-O /opt/tomcat/webapps/BIMserver.war
 
 # Set environment paths for Tomcat
